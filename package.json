@@ -1,6 +1,6 @@
 {
   "name": "multiplexed-saver",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simultaneously save to multiple media with a single line of code in NodeJS.",
   "keywords": ["save", "log", "multiplexed", "multiple"],
   "homepage": "https://github.com/fcharra/Multiplexed-Saver",
