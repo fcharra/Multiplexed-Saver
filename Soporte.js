@@ -29,10 +29,22 @@ module.exports = class Logger {
   * Save to all configured media, a given entry.
   * @public
   * @method save
-  * @param {Object} data The data to be saved.
+  * @param {Object|Object[]} data The data to be saved.
   */
   save(data) {
-    this.mediaLine.forEach( (media) => media.save(data) );
+    if (Array.isArray(data))
+      this._saveBatch(data);
+    else
+      this._saveItem(data);
+  }
+
+  _saveBatch(dataBatch) {
+    for(let i = 0; i < dataBatch.length; i++)
+      this._saveItem(dataBatch[i]);
+  }
+
+  _saveItem(dataItem) {
+    this.mediaLine.forEach( (media) => media.save(dataItem) );
   }
 
 }
