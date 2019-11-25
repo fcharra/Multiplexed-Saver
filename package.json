@@ -1,17 +1,18 @@
 {
   "name": "multiplexed-saver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simultaneously save to multiple media with a single line of code in NodeJS.",
-  "keywords": [],
-  "homepage": "",
-  "bugs": "",
+  "keywords": ["save", "log", "multiplexed", "multiple"],
+  "homepage": "https://github.com/fcharra/Multiplexed-Saver",
+  "bugs": "https://github.com/fcharra/Multiplexed-Saver/issues",
   "license": "MIT",
   "author": {
     "name": "Federico Charra",
     "url": "https://github.com/fcharra"
   },
-  "main": "tests/test.js",
+  "main": "Soporte.js",
+  "repository": "github:fcharra/Multiplexed-Saver",
   "engines": {
-    "node": ">=10.15.2"
+    "node": ">=12.13.0"
   }
 }
